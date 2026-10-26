@@ -1,0 +1,538 @@
+[
+  {
+    "name": "Aruzhan",
+    "aliases": [],
+    "arabicMeaning": "رُوحٌ جَمِيلَة",
+    "meaning": "Beautiful soul.",
+    "approved": true
+  },
+  {
+    "name": "Fang",
+    "aliases": [],
+    "arabicMeaning": "عِطْر",
+    "meaning": "Fragrance / pleasant scent.",
+    "approved": true
+  },
+  {
+    "name": "Lucas",
+    "aliases": [],
+    "arabicMeaning": "لُوقَا",
+    "meaning": "Man from Lucania.",
+    "approved": true
+  },
+  {
+    "name": "Daniil",
+    "aliases": [
+      "Daniel"
+    ],
+    "arabicMeaning": "اللهُ حَكَمِي",
+    "meaning": "God is my judge.",
+    "approved": true
+  },
+  {
+    "name": "Mikalai",
+    "aliases": [
+      "Nicholas"
+    ],
+    "arabicMeaning": "نَصْرُ الشَّعْب",
+    "meaning": "Victory of the people.",
+    "approved": true
+  },
+  {
+    "name": "Alexandra",
+    "aliases": [],
+    "arabicMeaning": "حَامِيَةُ النَّاس",
+    "meaning": "Defender / protector of the people.",
+    "approved": true
+  },
+  {
+    "name": "Thasaporn",
+    "aliases": [],
+    "arabicMeaning": "بَرَكَة",
+    "meaning": "Blessing / auspicious gift.",
+    "approved": true
+  },
+  {
+    "name": "Tahlia",
+    "aliases": [],
+    "arabicMeaning": "نَدَى الله",
+    "meaning": "Dew of God.",
+    "approved": true
+  },
+  {
+    "name": "Vaidehee",
+    "aliases": [
+      "Vaidehi"
+    ],
+    "arabicMeaning": "أَمِيرَةُ فِيدِيهَا",
+    "meaning": "Princess of Videha.",
+    "approved": true
+  },
+  {
+    "name": "Sam",
+    "aliases": [
+      "Samuel"
+    ],
+    "arabicMeaning": "سَمِعَ اللهُ",
+    "meaning": "God has heard.",
+    "approved": true
+  },
+  {
+    "name": "Enzo",
+    "aliases": [],
+    "arabicMeaning": "حَاكِمُ الدَّار",
+    "meaning": "Ruler of the household.",
+    "approved": true
+  },
+  {
+    "name": "Lorenzo",
+    "aliases": [],
+    "arabicMeaning": "مُتَوَّجٌ بِالغَار",
+    "meaning": "Crowned with laurel.",
+    "approved": true
+  },
+  {
+    "name": "Ignacio",
+    "aliases": [],
+    "arabicMeaning": "نَار",
+    "meaning": "Fire / flame.",
+    "approved": true
+  },
+  {
+    "name": "Oscar",
+    "aliases": [],
+    "arabicMeaning": "رُمْحُ الإِلَه",
+    "meaning": "Spear of God.",
+    "approved": true
+  },
+  {
+    "name": "Rocco",
+    "aliases": [],
+    "arabicMeaning": "رَاحَة",
+    "meaning": "Rest / repose.",
+    "approved": true
+  },
+  {
+    "name": "Madison",
+    "aliases": [],
+    "arabicMeaning": "ابْنُ مَاثْيُو",
+    "meaning": "Son of Matthew / son of God's gift.",
+    "approved": true
+  },
+  {
+    "name": "Thea",
+    "aliases": [],
+    "arabicMeaning": "إِلَهَة",
+    "meaning": "Goddess / divine one.",
+    "approved": true
+  },
+  {
+    "name": "Barbora",
+    "aliases": [
+      "Barbara"
+    ],
+    "arabicMeaning": "أَعْجَمِيَّة",
+    "meaning": "Foreign woman / non-Greek-speaking woman.",
+    "approved": true
+  },
+  {
+    "name": "Elizabeth",
+    "aliases": [],
+    "arabicMeaning": "اللهُ قَسَمِي",
+    "meaning": "God is my oath.",
+    "approved": true
+  },
+  {
+    "name": "Ella",
+    "aliases": [],
+    "arabicMeaning": "نُور",
+    "meaning": "Light / radiance.",
+    "approved": true
+  },
+  {
+    "name": "Rebecca",
+    "aliases": [],
+    "arabicMeaning": "رِفْقَة",
+    "meaning": "To bind / to join together.",
+    "approved": true
+  },
+  {
+    "name": "Santiago",
+    "aliases": [],
+    "arabicMeaning": "يَعْقُوب",
+    "meaning": "Jacob / James.",
+    "approved": true
+  },
+  {
+    "name": "Gonzalo",
+    "aliases": [],
+    "arabicMeaning": "مُحَارِب",
+    "meaning": "Warrior / fighter.",
+    "approved": true
+  },
+  {
+    "name": "Francisco",
+    "aliases": [],
+    "arabicMeaning": "حُرّ",
+    "meaning": "Free man.",
+    "approved": true
+  },
+  {
+    "name": "Herman",
+    "aliases": [],
+    "arabicMeaning": "مُحَارِب",
+    "meaning": "Warrior / soldier.",
+    "approved": true
+  },
+  {
+    "name": "Moerani",
+    "aliases": [],
+    "arabicMeaning": "نُورُ السَّمَاء",
+    "meaning": "Light of the sky / heavenly light.",
+    "approved": true
+  },
+  {
+    "name": "Anton",
+    "aliases": [],
+    "arabicMeaning": "نَفِيس",
+    "meaning": "Precious / valuable / priceless.",
+    "approved": true
+  },
+  {
+    "name": "Isaac",
+    "aliases": [],
+    "arabicMeaning": "إِسْحَاق",
+    "meaning": "He laughs / he will laugh.",
+    "approved": true
+  },
+  {
+    "name": "Blake",
+    "aliases": [],
+    "arabicMeaning": "أَسْوَد",
+    "meaning": "Black / dark.",
+    "approved": true
+  },
+  {
+    "name": "Benjamin",
+    "aliases": [],
+    "arabicMeaning": "ابْنُ اليَمِين",
+    "meaning": "Son of the right hand / son of good fortune.",
+    "approved": true
+  },
+  {
+    "name": "Derek",
+    "aliases": [],
+    "arabicMeaning": "حَاكِمُ الشَّعْب",
+    "meaning": "Ruler of the people.",
+    "approved": true
+  },
+  {
+    "name": "Thanapet",
+    "aliases": [],
+    "arabicMeaning": "صَاحِبُ الثَّرْوَة",
+    "meaning": "Possessor of wealth / prosperity.",
+    "approved": true
+  },
+  {
+    "name": "Arnav",
+    "aliases": [],
+    "arabicMeaning": "مُحِيط",
+    "meaning": "Ocean / vast sea.",
+    "approved": true
+  },
+  {
+    "name": "Taisei",
+    "aliases": [],
+    "arabicMeaning": "إِنْجَازٌ عَظِيم",
+    "meaning": "Great achievement / great success.",
+    "note": "Meaning depends on the Japanese kanji. If written 大成 → إِنْجَازٌ عَظِيم",
+    "approved": false
+  },
+  {
+    "name": "Yingqun",
+    "aliases": [],
+    "arabicMeaning": "نُخْبَةُ الجَمَاعَة",
+    "meaning": "The outstanding one among the group.",
+    "note": "Meaning depends on the original Chinese characters. If written 英群 → نُخْبَةُ الجَمَاعَة",
+    "approved": false
+  },
+  {
+    "name": "Antonia",
+    "aliases": [],
+    "arabicMeaning": "نَفِيسَة",
+    "meaning": "Precious / valuable / priceless.",
+    "approved": true
+  },
+  {
+    "name": "Kayla",
+    "aliases": [],
+    "arabicMeaning": "إِكْلِيل",
+    "meaning": "Crown / laurel.",
+    "approved": true
+  },
+  {
+    "name": "Alana",
+    "aliases": [],
+    "arabicMeaning": "جَمِيلَة",
+    "meaning": "Beautiful / attractive.",
+    "approved": true
+  },
+  {
+    "name": "Erika",
+    "aliases": [],
+    "arabicMeaning": "حَاكِمَةٌ أَبَدِيَّة",
+    "meaning": "Eternal ruler / everlasting sovereign.",
+    "approved": true
+  },
+  {
+    "name": "Sera",
+    "aliases": [],
+    "arabicMeaning": "أَمِيرَة",
+    "meaning": "Princess / noblewoman.",
+    "approved": true
+  },
+  {
+    "name": "Jiho",
+    "aliases": [],
+    "arabicMeaning": "حِكْمَة",
+    "meaning": "Wisdom.",
+    "approved": true
+  },
+  {
+    "name": "Lynelle",
+    "aliases": [],
+    "arabicMeaning": "بُحَيْرَة",
+    "meaning": "Little lake.",
+    "approved": true
+  },
+  {
+    "name": "Natsuho",
+    "aliases": [],
+    "arabicMeaning": "سُنْبُلَةُ الصَّيْف",
+    "meaning": "Ear of grain in summer.",
+    "note": "Meaning depends on the Japanese kanji. If written 夏穂 → سُنْبُلَةُ الصَّيْف",
+    "approved": false
+  },
+  {
+    "name": "Sinja",
+    "aliases": [],
+    "arabicMeaning": "نِعْمَة",
+    "meaning": "Grace / divine favor.",
+    "approved": true
+  },
+  {
+    "name": "Talia",
+    "aliases": [],
+    "arabicMeaning": "نَدَى الله",
+    "meaning": "Dew of God.",
+    "approved": true
+  },
+  {
+    "name": "Jelena",
+    "aliases": [
+      "Helena"
+    ],
+    "arabicMeaning": "مُشْرِقَة",
+    "meaning": "Bright / radiant / shining.",
+    "approved": true
+  },
+  {
+    "name": "Belinda",
+    "aliases": [],
+    "arabicMeaning": "جَمِيلَة",
+    "meaning": "Beautiful / lovely.",
+    "approved": true
+  },
+  {
+    "name": "Tereza",
+    "aliases": [
+      "Theresa"
+    ],
+    "arabicMeaning": "حَصَّادَة",
+    "meaning": "Harvester / reaper.",
+    "approved": true
+  },
+  {
+    "name": "Shuai",
+    "aliases": [],
+    "arabicMeaning": "قَائِد",
+    "meaning": "Commander / leader.",
+    "approved": true
+  },
+  {
+    "name": "Noah",
+    "aliases": [],
+    "arabicMeaning": "نُوح",
+    "meaning": "Noah,",
+    "approved": true
+  },
+  {
+    "name": "Vraj",
+    "aliases": [],
+    "arabicMeaning": "مَرْعًى",
+    "meaning": "Pasture / grazing land,",
+    "approved": true
+  },
+  {
+    "name": "Chihiro",
+    "aliases": [],
+    "arabicMeaning": "أَلْفُ قَامَة",
+    "meaning": "A thousand fathoms,",
+    "note": "depends on the Japanese kanji. If 千尋, a common form: أَلْفُ قَامَة",
+    "approved": false
+  },
+  {
+    "name": "Luke",
+    "aliases": [],
+    "arabicMeaning": "نُور",
+    "meaning": "Light / luminous.",
+    "approved": true
+  },
+  {
+    "name": "Yuka",
+    "aliases": [],
+    "arabicMeaning": "مَعُونَةٌ بَهِيَّة",
+    "meaning": "Splendid/beautiful assistance.",
+    "approved": true
+  },
+  {
+    "name": "Viktorija",
+    "aliases": [],
+    "arabicMeaning": "مُنْتَصِرَة",
+    "meaning": "Victorious / triumphant.",
+    "approved": true
+  },
+  {
+    "name": "Mai",
+    "aliases": [],
+    "arabicMeaning": "الحَقِيقِيَّةُ الوَحِيدَة",
+    "meaning": "The true/ genuine one; the only one.",
+    "approved": true
+  },
+  {
+    "name": "Lanlana",
+    "aliases": [],
+    "arabicMeaning": "حَسْنَاء",
+    "meaning": "Beautiful woman / fair maiden.",
+    "approved": true
+  },
+  {
+    "name": "Kaitlin",
+    "aliases": [],
+    "arabicMeaning": "طَاهِرَة",
+    "meaning": "Pure / chaste.",
+    "approved": true
+  },
+  {
+    "name": "Christasha",
+    "aliases": [],
+    "arabicMeaning": "مَسِيحِيَّة",
+    "meaning": "Christian / follower of Christ.",
+    "approved": true
+  },
+  {
+    "name": "Lois",
+    "aliases": [],
+    "arabicMeaning": "أَفْضَل",
+    "meaning": "Better / superior.",
+    "approved": true
+  },
+  {
+    "name": "Lidia",
+    "aliases": [],
+    "arabicMeaning": "لِيدِيَّة",
+    "meaning": "Woman from Lydia.",
+    "approved": true
+  },
+  {
+    "name": "Harini",
+    "aliases": [],
+    "arabicMeaning": "غَزَالَة",
+    "meaning": "Doe / female deer.",
+    "approved": true
+  },
+  {
+    "name": "Sarah",
+    "aliases": [],
+    "arabicMeaning": "سَارَة",
+    "meaning": "Princess / noblewoman.",
+    "approved": true
+  },
+  {
+    "name": "Ekaterina",
+    "aliases": [],
+    "arabicMeaning": "طَاهِرَة",
+    "meaning": "Pure / chaste.",
+    "approved": true
+  },
+  {
+    "name": "Natalie",
+    "aliases": [],
+    "arabicMeaning": "مِيلَاد",
+    "meaning": "Birth / nativity.",
+    "approved": true
+  },
+  {
+    "name": "Matthew",
+    "aliases": [],
+    "arabicMeaning": "عَطِيَّةُ الله",
+    "meaning": "Gift of God.",
+    "approved": true
+  },
+  {
+    "name": "Martin",
+    "aliases": [],
+    "arabicMeaning": "مُحَارِب",
+    "meaning": "Warrior / warlike.",
+    "approved": true
+  },
+  {
+    "name": "Jannat",
+    "aliases": [],
+    "arabicMeaning": "جَنَّة",
+    "meaning": "Paradise / garden.",
+    "approved": true
+  },
+  {
+    "name": "Sofia",
+    "aliases": [],
+    "arabicMeaning": "حِكْمَة",
+    "meaning": "Wisdom.",
+    "approved": true
+  },
+  {
+    "name": "Faith",
+    "aliases": [],
+    "arabicMeaning": "إِيمَان",
+    "meaning": "Faith / belief.",
+    "approved": true
+  },
+  {
+    "name": "Arantxa",
+    "aliases": [],
+    "arabicMeaning": "شَوْكَة",
+    "meaning": "Thorn,",
+    "approved": true
+  },
+  {
+    "name": "Mary",
+    "aliases": [],
+    "arabicMeaning": "مَرْيَم",
+    "meaning": "Established Classical Arabic equivalent.",
+    "approved": true
+  },
+  {
+    "name": "Alice",
+    "aliases": [],
+    "arabicMeaning": "نَبِيلَة",
+    "meaning": "Noble, of noble lineage.",
+    "approved": true
+  },
+  {
+    "name": "Elena",
+    "aliases": [],
+    "arabicMeaning": "نُور",
+    "meaning": "Light, radiance.",
+    "approved": true
+  }
+]

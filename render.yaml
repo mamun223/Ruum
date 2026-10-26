@@ -1,0 +1,22 @@
+# Render blueprint for the Express backend (scheduler + live polling run in-process).
+# Needs an always-on instance: free instances sleep after 15 min idle, which stops the scheduler.
+services:
+  - type: web
+    name: ruum-backend
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npx prisma generate --schema packages/database/prisma/schema.prisma
+    startCommand: npm run start:prod -w backend
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: TENNIS_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

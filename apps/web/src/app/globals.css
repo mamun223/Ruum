@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(124, 58, 237, 0.15),
+    transparent
+  );
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-arabic {
+    font-family: var(--font-arabic), "Geeza Pro", "Arial", sans-serif;
+  }
+}

@@ -1,0 +1,195 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Player {
+  id            String   @id @default(cuid())
+  name          String   @unique
+  /// Nationality as a 3-letter code from the tennis API (context for AI translations)
+  country       String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  matchesAsPlayer1 Match[] @relation("Player1Matches")
+  matchesAsPlayer2 Match[] @relation("Player2Matches")
+  predictionsAsWinner Prediction[] @relation("PredictedWinner")
+  winsAsWinner Match[] @relation("WinnerMatches")
+}
+
+model Match {
+  id             String   @id @default(cuid())
+  player1Id      String
+  player2Id      String
+  tournament     String
+  city           String
+  country        String
+  scheduledTime  DateTime
+  actualStartTime DateTime?
+  status         MatchStatus @default(SCHEDULED)
+  /// True when the API has no start time yet (order of play not published)
+  timeTbd        Boolean  @default(false)
+  /// Live set score while in progress, final score when completed (player1 first)
+  score          String?
+  /// Current game points while in progress (player1 first)
+  points         String?
+  liveUpdatedAt  DateTime?
+  winnerId       String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  player1        Player   @relation("Player1Matches", fields: [player1Id], references: [id])
+  player2        Player   @relation("Player2Matches", fields: [player2Id], references: [id])
+  winner         Player?  @relation("WinnerMatches", fields: [winnerId], references: [id])
+  predictions    Prediction[]
+  historicalEvidence HistoricalEvidence[]
+
+  @@index([status])
+  @@index([scheduledTime])
+  @@index([tournament])
+}
+
+model Prediction {
+  id              String   @id @default(cuid())
+  matchId         String
+  method          PredictionMethod @default(PRONUNCIATION)
+  remainderPair   Json
+  structuralClass Json
+  predictedWinner String?
+  strength        PredictionStrength @default(NO_PREDICTION)
+  reason          String?
+  evidence        Json[]
+  formulaVersion  String   @default("1.0")
+  engineVersion   String   @default("1.0")
+  frozenAt        DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  match           Match    @relation(fields: [matchId], references: [id])
+  predictedWinnerPlayer Player? @relation("PredictedWinner", fields: [predictedWinner], references: [id])
+
+  @@unique([matchId, method])
+  @@index([matchId])
+  @@index([predictedWinner])
+  @@index([strength])
+}
+
+model HistoricalEvidence {
+  id              String   @id @default(cuid())
+  matchId         String
+  winner          String
+  remainderPair   Json
+  structuralClass Json
+  city            String
+  weekday         Int
+  hijriMonth      Int?
+  hijriDate       Int?
+  timeDistance    Int?
+  similarityScore Float
+  createdAt       DateTime @default(now())
+
+  match           Match    @relation(fields: [matchId], references: [id])
+
+  @@index([winner])
+  @@index([city])
+  @@index([weekday])
+}
+
+model NameMapping {
+  id           String   @id @default(cuid())
+  playerName   String   @unique
+  arabicMeaning String
+  abjadValue   Int
+  meaning      String?
+  note         String?
+  source       String   @default("MANUAL")
+  approved     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([approved])
+}
+
+/// Arabic phrase for the MEANING of a first name (separate calculation from NameMapping's pronunciation)
+model NameMeaning {
+  id            String   @id @default(cuid())
+  playerName    String   @unique
+  arabicMeaning String
+  abjadValue    Int
+  meaning       String?
+  note          String?
+  source        String   @default("MANUAL")
+  approved      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([approved])
+}
+
+model PlaceMapping {
+  id         String   @id @default(cuid())
+  kind       String
+  key        String
+  name       String
+  arabicName String
+  abjadValue Int
+  source     String   @default("MANUAL")
+  approved   Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([kind, key])
+  @@index([approved])
+}
+
+/// Re-check of a failed pick with alternative Arabic spellings / meanings of the first names.
+/// Self-contained (no relation) so it survives the daily match purge.
+model PickReview {
+  id          String           @id @default(cuid())
+  matchId     String
+  method      PredictionMethod
+  matchTime   DateTime
+  tournament  String
+  country     String
+  player1     String
+  player2     String
+  pickedName  String
+  winnerName  String
+  /// Stored remainders plus a re-calculation with the current dictionary (baseline)
+  original    Json
+  /// One entry per alternative spelling / meaning tried
+  variants    Json[]
+  /// True when at least one variant would have picked the actual winner
+  flipped     Boolean          @default(false)
+  error       String?
+  createdAt   DateTime         @default(now())
+
+  @@unique([matchId, method])
+  @@index([createdAt])
+}
+
+enum MatchStatus {
+  SCHEDULED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum PredictionMethod {
+  PRONUNCIATION
+  MEANING
+}
+
+enum PredictionStrength {
+  STRONG
+  MODERATE
+  WEAK
+  NO_PREDICTION
+}
